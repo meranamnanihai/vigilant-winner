@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .hack{
+        font-family: 'Courier New', Courier, monospace;
+        color: green;
+        font-size: 20px;
+        
+    }
+    body{
+        background-color: black;
+    }
+</style>
+<body onclick="startaudio()">
+    <div class="hack">Hacking your account ...</div><br> <br>
+    <div class="hack"> Fetchng information ...</div><br> <br>
+    <div class="hack">Running script.js  ...</div><br> <br>
+    <div class="hack"> {Script succefully executed("script.js")} ...</div><br> <br>
+    <div class="hack"> Information fetched ...</div><br> <br>
+    <div class="hack"> Launching DDos attack ...</div><br> <br>
+    <div class="hack"> Getting password.js ...</div><br> <br>
+    <div class="hack"> {Password succesfully fetched} ... </div><br> <br>
+    <div class="hack">password and username succesfully found ... </div><br> <br>
+    <div class="hack"> Attack complete ... </div><br> <br>
+    <div class="hack"> Succefully hacked you ... </div><br> <br>
+    <div class="hack"> I have access to your all your information 😨😨 ...</div><br> <br>
+    <div class="hack"> Goodbye {Thanks for opening the link} ... </div><br> <br>
+    <audio src="ASUR Soundtrack  ASUR Background Score  VOOT Select Series  2020.mp3" controls loop autoplay hidden id = "asur"></audio>
+
+    <script>
+        let hack = document.getElementsByClassName("hack");
+        var arr = Array.from(hack);
+
+        arr.forEach ( (element,index) => {
+            element.hidden = true;
+            setInterval(() => {
+                element.hidden = false;
+                
+            },(index) * 2000);
+        
+        });
+        function startaudio(){
+            let audio = document.getElementById("asur")
+            console.log(audio)
+            audio.play()
+            
+        }
+        setTimeout(() => {
+            alert("This website has hacked your phone")
+        }, 26000);
+
+    </script>
+</body>
+</html>
